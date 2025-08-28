@@ -5,7 +5,7 @@ import summaryRoutes from "./routes/emailRoute.js";
 
 const app = express();
 app.use(cors({
-  origin: process.env.FRONTEND_ORIGIN || "http://localhost:3000" || "https://www.zentrok.com",
+  origin: "https://www.zentrok.com" || "http://localhost:3000" || "https://zentrok.vercel.app",
   methods: ["GET", "POST"],
   credentials: true
 }
